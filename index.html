@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <title>Test Website</title>
+    <link rel=stylesheet type=text/css href=css/main.css>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:300" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    
+<body>
+    
+    <div class="nav-container">
+        <div class="nav-bar">
+            <div class="mini-cart-container" onmouseover="miniCartToggle()" onmouseout="miniCartToggle()">
+                <input class="mini-cart-button" type="button" value="">
+                <div class="mini-cart"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="body-container">
+        <div class="image-container">
+            <img class="product-image" alt="Product Image">
+        </div>
+        <div class="info-container">
+            <h1 class="product-name"></h1><br>
+            <h2 class="product-price"></h2><br>
+            <p class="product-description"></p><br>
+            <form id="purchase-product">
+                <p>SIZE</p><p class="required">*</p><p class="selected-size"></p>
+                <div class="sizes-container"></div>
+                <input class="cart-submit" type="button" value="ADD TO CART" onclick="addToCart(0)">
+            </form>
+        </div>
+    </div>
+    
+    <script type=text/javascript src="js/main.js"></script>
+    
+</body>
+</html>
